@@ -16,7 +16,7 @@ a{color:var(--link)}img{max-width:100%;display:block}
 .blk+.blk{margin-top:24px}
 .eb{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--fg);margin:0 0 8px}
 .eb.g{color:var(--sub)}
-.t-red{color:var(--link);font-weight:900;font-size:26px;line-height:1.25;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+.t-red{color:var(--link);font-weight:900;font-size:clamp(26px,6.4vw,32px);line-height:1.22;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
 .t-up{font-weight:900;font-size:22px;line-height:1.2;letter-spacing:-.01em;text-transform:uppercase;margin:0 0 12px;text-wrap:balance}
 .blk p{margin:0 0 12px}.blk p b{color:var(--fg)}
 .more{color:var(--link);font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
@@ -44,8 +44,22 @@ th,td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;white-
 .kr{letter-spacing:0;text-transform:none}
 .sns{display:flex;flex-wrap:wrap;gap:8px 18px;margin:10px 0 18px}.sns a{color:var(--fg);font-weight:700;font-size:13px;text-decoration:none}
 .foot{padding-block:28px 44px;color:var(--sub);font-size:12px;border-top:1px solid var(--line)}
-.foot .logo{font-size:22px;display:inline-block;margin-bottom:6px}
+.foot .logo{display:inline-flex;margin-bottom:8px}
 .issues{list-style:none;padding:0;margin:8px 0 0}.issues li{border-top:1px solid var(--line);padding:18px 0}
 .issues a{color:var(--fg);font-weight:800;font-size:18px;text-decoration:none}.issues .d{display:block;color:var(--sub);font-size:13px}
 a:focus-visible{outline:3px solid var(--fg);outline-offset:3px}
 @media(max-width:520px){.two{grid-template-columns:1fr}.nums{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.tagline{font-size:9px}}
+
+.nums div{border-top:2px solid var(--link);padding-top:10px}
+.nums b small{font-size:.55em;margin-left:1px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px;padding:0;list-style:none}
+.chips li{border:1px solid #3a3a3a;padding:6px 10px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin:0}
+.spec{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:12px 0;font-size:14px}
+.spec dt{color:var(--sub);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding-top:2px}
+.spec dd{margin:0}
+.tag{display:inline-block;font-size:11px;color:var(--sub);border:1px solid #3a3a3a;padding:0 6px;margin-left:6px;vertical-align:2px;font-weight:700}
+.lead-img{margin-top:2px}
+.logo{display:inline-flex;align-items:flex-end;gap:6px}
+.logo .mark{height:22px;width:auto;display:block}
+.logo small{font-size:13px;line-height:1;margin:0 0 1px;font-weight:700;color:var(--fg)}
+.foot .logo .mark,.made .logo .mark{height:16px}
