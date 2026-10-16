@@ -1,0 +1,6 @@
+.DS_Store
+.env
+*.key
+profile/
+node_modules/
+_private/
