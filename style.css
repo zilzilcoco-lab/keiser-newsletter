@@ -1,19 +1,19 @@
 /* 카이저 본사 뉴스레터 톤: 600px 1단, 위부터 끝까지 검정, Inter 하나, 꼭지마다 짧은 본문 + 빨간 링크/사각 버튼, 둥근 모서리·그림자 없음 */
 :root{--bg:#000;--fg:#fff;--sub:#a8a8a9;--line:#262626;--red:#c8102e;--link:#e1233b;--ph:#f2f2f2;--font:"Inter","Noto Sans KR","Apple SD Gothic Neo",Arial,sans-serif}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+body{margin:0;word-break:keep-all;overflow-wrap:break-word;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:var(--link)}img{max-width:100%;display:block}
 .wrap{max-width:600px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 .pre{color:var(--sub);font-size:11px;text-align:center;padding-block:10px}
 .pre a{color:var(--sub)}
-.head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:18px 22px}
+.head{display:flex;align-items:center;gap:14px;padding-block:18px 22px}
 .logo{color:var(--red);font-weight:900;font-style:italic;font-size:30px;letter-spacing:-.03em;text-decoration:none;line-height:1}
 .logo small{font-size:.45em;font-style:normal;color:var(--fg);letter-spacing:.02em;margin-left:4px;font-weight:700}
-.tagline{color:var(--fg);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;line-height:1.35;text-align:right}
+.tagline{color:var(--fg);font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;line-height:1.3;border-left:1px solid var(--sub);padding-left:12px}
 .full{margin-left:calc(-1*max(20px,env(safe-area-inset-left,0px)));margin-right:calc(-1*max(20px,env(safe-area-inset-right,0px)))}
 .full img{width:100%}
-.blk{padding-block:28px;border-bottom:1px solid var(--line)}
-.blk:last-of-type{border-bottom:0}
+.blk{padding-block:26px}
+.blk+.blk{margin-top:24px}
 .eb{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--fg);margin:0 0 8px}
 .eb.g{color:var(--sub)}
 .t-red{color:var(--link);font-weight:900;font-size:26px;line-height:1.25;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
@@ -22,25 +22,28 @@ a{color:var(--link)}img{max-width:100%;display:block}
 .more{color:var(--link);font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
 .btn{display:inline-block;background:var(--link);color:#fff;font-weight:800;font-size:14px;letter-spacing:.08em;text-transform:uppercase;padding:13px 26px;text-decoration:none;margin-top:6px}
 .two{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:22px;align-items:center}
-.ph{background:var(--ph);aspect-ratio:4/3;overflow:hidden}.ph img{width:100%;height:100%;object-fit:contain}
+.ph{background:#111;aspect-ratio:4/3;overflow:hidden}.ph img{width:100%;height:100%;object-fit:contain}
 .list{margin:0 0 12px;padding-left:18px}.list li{margin:4px 0}
 .icon{display:grid;grid-template-columns:56px minmax(0,1fr);gap:16px;align-items:start}
 .icon svg{width:56px;height:56px;stroke:var(--fg);fill:none;stroke-width:1.6}
 .nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0 0;text-align:center}
 .nums b{display:block;font-size:24px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
 .nums span{color:var(--sub);font-size:11px;line-height:1.3;display:block;margin-top:4px}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-block:16px;border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-block:14px}
+.bars{margin-top:24px;display:grid;gap:2px}.bars .bar{background:#111;padding-left:16px;padding-right:16px}
 .bar strong{font-weight:900;text-transform:uppercase;font-size:14px;letter-spacing:.04em}
 .big{font-weight:900;font-size:clamp(30px,8vw,40px);line-height:1.1;letter-spacing:-.03em;margin:0 0 10px}
 .big .r{color:var(--link)}
-.made{display:flex;gap:12px;align-items:center;padding-block:22px;border-bottom:1px solid var(--line)}
+.made{display:flex;gap:12px;align-items:center;padding-block:28px}
 .made p{margin:0;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;line-height:1.4}
 .made p span{display:block;color:var(--sub);font-weight:400;letter-spacing:0;text-transform:none}
 .tw{overflow-x:auto;margin:6px 0 12px}table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
 th,td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;white-space:nowrap}th{color:var(--sub);font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
 .note{color:var(--sub);font-size:13px}
-.promo{max-width:420px;margin:18px auto 0}
-.foot{padding-block:26px 40px;color:var(--sub);font-size:12px;border-top:1px solid var(--line)}
+.promo{max-width:360px;margin:0 auto 22px}
+.kr{letter-spacing:0;text-transform:none}
+.sns{display:flex;flex-wrap:wrap;gap:8px 18px;margin:10px 0 18px}.sns a{color:var(--fg);font-weight:700;font-size:13px;text-decoration:none}
+.foot{padding-block:28px 44px;color:var(--sub);font-size:12px;border-top:1px solid var(--line)}
 .foot .logo{font-size:22px;display:inline-block;margin-bottom:6px}
 .issues{list-style:none;padding:0;margin:8px 0 0}.issues li{border-top:1px solid var(--line);padding:18px 0}
 .issues a{color:var(--fg);font-weight:800;font-size:18px;text-decoration:none}.issues .d{display:block;color:var(--sub);font-size:13px}
