@@ -1,5 +1,5 @@
 /* 카이저 본사 뉴스레터 톤: 600px 1단, 위부터 끝까지 검정, Inter 하나, 꼭지마다 짧은 본문 + 빨간 링크/사각 버튼, 둥근 모서리·그림자 없음 */
-:root{--bg:#000;--fg:#fff;--sub:#a8a8a9;--line:#262626;--red:#c8102e;--link:#e1233b;--ph:#f2f2f2;--font:"Inter","Noto Sans KR","Apple SD Gothic Neo",Arial,sans-serif}
+:root{--bg:#000;--fg:#fff;--sub:#a8a8a9;--line:#262626;--red:#c8102e;--link:#e8001d;--ph:#f2f2f2;--font:"Inter","Noto Sans KR","Apple SD Gothic Neo",Arial,sans-serif}
 *{box-sizing:border-box}
 body{margin:0;word-break:keep-all;overflow-wrap:break-word;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:var(--link)}img{max-width:100%;display:block}
@@ -64,3 +64,4 @@ a:focus-visible{outline:3px solid var(--fg);outline-offset:3px}
 .logo small{font-size:13px;line-height:1;margin:0 0 1px;font-weight:700;color:var(--fg)}
 .foot .logo .mark,.made .logo .mark{height:16px}
 .lead{font-weight:700;font-size:17px;margin:0 0 10px;color:var(--fg)}
+.t-sub{color:var(--link);font-weight:900;font-size:20px;line-height:1.3;margin:0 0 8px}
