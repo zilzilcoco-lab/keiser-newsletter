@@ -42,7 +42,7 @@ th,td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;white-
 .note{color:var(--sub);font-size:13px}
 .promo{max-width:360px;margin:0 auto 22px}
 .kr{letter-spacing:0;text-transform:none}
-.sns{display:flex;flex-wrap:wrap;gap:8px 18px;margin:10px 0 18px}.sns a{color:var(--fg);font-weight:700;font-size:13px;text-decoration:none}
+.sns{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 22px}.sns a{color:var(--fg);font-weight:700;font-size:12px;text-decoration:none;border:1px solid #3a3a3a;padding:7px 12px}
 .foot{padding-block:28px 44px;color:var(--sub);font-size:12px;border-top:1px solid var(--line)}
 .foot .logo{display:inline-flex;margin-bottom:8px}
 .issues{list-style:none;padding:0;margin:8px 0 0}.issues li{border-top:1px solid var(--line);padding:18px 0}
@@ -63,3 +63,4 @@ a:focus-visible{outline:3px solid var(--fg);outline-offset:3px}
 .logo .mark{height:22px;width:auto;display:block}
 .logo small{font-size:13px;line-height:1;margin:0 0 1px;font-weight:700;color:var(--fg)}
 .foot .logo .mark,.made .logo .mark{height:16px}
+.lead{font-weight:700;font-size:17px;margin:0 0 10px;color:var(--fg)}
